@@ -78,7 +78,7 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-center mb-12 text-[#003a6a]"
           >
-            Let's <span className="text-[#0075d4]">connect.</span>
+            Let&apos;s <span className="text-[#0075d4]">connect.</span>
           </motion.h2>
 
           {/* Error/Success Messages */}
@@ -156,9 +156,9 @@ const Contact = () => {
                 <div className="w-5 h-5 border-2 border-t-transparent border-[#0075d4] rounded-full animate-spin"></div>
               ) : (
                 <>
-                  <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                    Let's talk
-                  </span>
+                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                 Let&apos;s talk
+                </span>
                   <BsArrowRight className="absolute text-[22px] text-white -translate-y-[120%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300" />
                 </>
               )}
