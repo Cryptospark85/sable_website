@@ -1,27 +1,43 @@
-// next image
-import Image from 'next/image';
-
 // next link
 import Link from 'next/link';
 
-// icons
-import { HiArrowRight } from 'react-icons/hi2';
-
 const ProjectsBtn = () => {
   return (
-    <div className='mx-auto xl:mx-0 z-10'>
-      <Link
-        href={'/work'}
-        className='relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group'
-      >
-        <Image
-          src={'/rounded-text.png'}
-          width={141}
-          height={148}
-          alt=''
-          className='animate-spin-slow w-full h-full max-w-[141px] max-h-[148px]'
-        />
-        <HiArrowRight className='absolute text-4xl group-hover:translate-x-2 transition-all duration-300' />
+    <div className="mx-auto xl:mx-0 z-10">
+      <Link href="/work">
+        <button className="relative w-[11em] h-[4em] outline-none transition duration-100 bg-transparent border-none text-[13px] font-bold text-[#ddebf0]">
+          Projects
+          {/* Button Style Elements */}
+          <div
+            id="clip"
+            className="absolute top-0 overflow-hidden w-full h-full border-[5px] border-double border-[#001f39] shadow-inner shadow-[#001f39] clip-path-custom"
+          >
+            <div
+              id="leftTop"
+              className="corner absolute w-[4em] h-[4em] bg-[#001f39] shadow-inner transform rotate-45 transition scale-100 top-[-1.98em] left-[-3em]"
+            ></div>
+            <div
+              id="rightTop"
+              className="corner absolute w-[4em] h-[4em] bg-[#001f39] shadow-inner transform rotate-45 transition scale-100 top-[-1.98em] left-[91%]"
+            ></div>
+            <div
+              id="leftBottom"
+              className="corner absolute w-[4em] h-[4em] bg-[#001f39] shadow-inner transform rotate-45 transition scale-100 top-[2.1em] left-[-2.15em]"
+            ></div>
+            <div
+              id="rightBottom"
+              className="corner absolute w-[4em] h-[4em] bg-[#001f39] shadow-inner transform rotate-45 transition scale-100 top-[45%] left-[88%]"
+            ></div>
+          </div>
+          <span
+            id="rightArrow"
+            className="arrow absolute top-[35%] left-[102%] w-[11%] h-[30%] bg-[#001f39] clip-path-rightArrow"
+          ></span>
+          <span
+            id="leftArrow"
+            className="arrow absolute top-[35%] left-[-13.5%] w-[11%] h-[30%] bg-[#001f39] clip-path-leftArrow"
+          ></span>
+        </button>
       </Link>
     </div>
   );

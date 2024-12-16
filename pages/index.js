@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className='bg-primary/60 h-full'>
       {/* text */}
-      <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
+      <div className='w-full h-full bg-gradient-to-r from-primary via-black/30 to-black/10'>
         <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
           {/* title */}
           <motion.h1
@@ -27,7 +27,7 @@ const Home = () => {
             className='h1'
           >
             Transforming Ideas <br /> Into{' '}
-            <span className='text-accent'>Digital Reality</span>
+            <span className='text-[#003a6a]'>Digital Reality</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -37,9 +37,7 @@ const Home = () => {
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
-            aspernatur dolores ut.
+            At Sable Solutions, we specialize in crafting custom applications that seamlessly integrate into your full business ecosystem. Our goal is to empower businesses by turning innovative ideas into scalable, tailored software solutions that enhance efficiency, streamline processes, and drive growth.
           </motion.p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
@@ -59,7 +57,7 @@ const Home = () => {
       {/* image */}
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>
         {/* bg img */}
-        <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'></div>
+        <div className='bg-[#040404] w-full h-full absolute mix-blend-color-dodge translate-z-0'></div>
         {/* particles */}
         <ParticlesContainer />
         {/* avatar img */}
