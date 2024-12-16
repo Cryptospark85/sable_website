@@ -43,87 +43,65 @@
   }
   .input,
   .textarea {
-    @apply bg-transparent outline-none focus:ring-1  focus:ring-[#6CB4EE] border border-white/20 placeholder:text-white/30 placeholder:font-light;
+    @apply bg-transparent outline-none focus:ring-1 focus:ring-[#6CB4EE] border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
-  
+
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 
   /* Custom clip paths */
-.clip-path-custom {
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-}
-
-.clip-path-rightArrow {
-  clip-path: polygon(100% 49%, 0 0, 0 100%);
-}
-
-.clip-path-leftArrow {
-  clip-path: polygon(100% 0, 100% 100%, 0 50%);
-}
-
-/* Default styles */
-#clip {
-  --color: #001f39;
-  border-color: var(--color);
-  box-shadow: inset 0px 0px 15px #001a33;
-}
-
-.arrow {
-  background-color: #002441;
-}
-
-.corner {
-  background-color: #002441;
-  box-shadow: inset 1px 1px 8px #002441;
-}
-
-/* Hover styles */
-button:hover .corner {
-  background-color: #0075d4;
-  box-shadow: inset 1px 1px 8px #0075d4;
-  transform: scale(1.25) rotate(45deg);
-}
-
-button:hover #clip {
-  border-color: #0075d4;
-  box-shadow: inset 0 0 32px #0075d4;
-}
-
-button:hover .arrow {
-  background-color: #0075d4;
-}
-
-/* Arrows hover animation */
-button:hover #rightArrow {
-  left: -15%;
-  animation: rightArrowMove 0.6s ease-in-out infinite alternate;
-}
-
-button:hover #leftArrow {
-  left: 103%;
-  animation: leftArrowMove 0.6s ease-in-out infinite alternate;
-}
-
-/* Keyframes for arrows */
-@keyframes rightArrowMove {
-  from {
-    transform: translateX(0);
+  .clip-path-custom {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   }
-  to {
-    transform: translateX(-10px);
-  }
-}
 
-@keyframes leftArrowMove {
-  from {
-    transform: translateX(0);
+  .clip-path-rightArrow {
+    clip-path: polygon(100% 49%, 0 0, 0 100%);
   }
-  to {
-    transform: translateX(10px);
-  }
-}
 
-  
+  .clip-path-leftArrow {
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  }
+
+  /* Default styles */
+  #clip {
+    --color: #001f39;
+    border-color: var(--color);
+    box-shadow: inset 0px 0px 15px #001a33;
+  }
+
+  .arrow {
+    background-color: #002441;
+  }
+
+  .corner {
+    background-color: #002441;
+    box-shadow: inset 1px 1px 8px #002441;
+  }
+
+  /* Hover styles */
+  button:hover .corner {
+    background-color: #0075d4;
+    box-shadow: inset 1px 1px 8px #0075d4;
+    transform: scale(1.25) rotate(45deg);
+  }
+
+  button:hover #clip {
+    border-color: #0075d4;
+    box-shadow: inset 0 0 32px #0075d4;
+  }
+
+  button:hover .arrow {
+    background-color: #0075d4;
+  }
+
+  /* Arrows hover animation */
+  @keyframes arrow-move {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-10px);
+    }
+  }
 }
